@@ -24,12 +24,20 @@
   height: 50vh;
   width: 40%;
   background-color: rgb(238, 211, 152);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
 }
 
 .val-img-content {
   height: 50vh;
   width: 40%;
   background-color: rgb(124, 170, 124);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
 }
 
 .val-div2 {
@@ -38,6 +46,9 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+}
+.val-description {
+  font-size: 24px;
 }
 
 #rainButton {
@@ -75,17 +86,20 @@
     no-repeat center center;
 }
 
-
 @keyframes bounce {
-	0%, 100%, 20%, 50%, 80% {
-		transform: scale(1);
-	}
-	40% {
-		transform: scale(1.2);
-	}
-	60% {
-		transform: scale(1.1);
-	}
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1.2);
+  }
+  60% {
+    transform: scale(1.1);
+  }
 }
 
 #heartContainer {
@@ -115,4 +129,25 @@
   100% {
     transform: translateY(100vh);
   }
+}
+
+
+
+@media only screen and (max-width: 768px){
+    .val-div1{
+        flex-direction: column;
+    }
+    .val-img{
+        width: 100%;
+    }
+    .val-img-content {
+        width: 100%;
+    }
+
+    #rainButton{
+        top: 85%;
+        left: 75%;
+    }
+
+    
 }
