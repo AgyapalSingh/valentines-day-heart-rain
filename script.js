@@ -3,7 +3,7 @@ const heartContainer = document.getElementById('heartContainer');
 
 // Function to start heart rain
 const startHeartRain = () => {
-  const heartRainDuration = 5000; // 5 seconds
+  const heartRainDuration = 3000; // 3 seconds
   const interval = 100; // Interval to create hearts
 
   const createHeart = () => {
